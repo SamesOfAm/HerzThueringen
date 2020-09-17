@@ -2,6 +2,7 @@
 
 .menu-head {
   width: 90%;
+  max-width: 1000px;
   margin: 10px auto 40px;
   position: relative;
   .ce_text {
@@ -11,9 +12,10 @@
 
 .menu-close {
   position: absolute;
-  top: 24px;
+  top: 5px;
   right: 0;
   width: 50px;
+  z-index: 2;
 }
 
 .menu-body {
@@ -22,13 +24,16 @@
   .mod_form {
     position: relative;
     top: -20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
     form {
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
     }
     .widget-text {
       float: left;
-      width: 82%;
+      width: 87%;
       input {
         position: relative;
         z-index: 1;
@@ -40,7 +45,7 @@
       }
     }
     .widget-submit input {
-      width: 24px;
+      width: 23px;
       background-color: $primary-color;
       border-radius: 25px;
       padding: 3px 7px 3px 31px;
@@ -97,5 +102,14 @@
       display: block;
       float: left;
     }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .menu-close {
+    top: 45px;
+  }
+  .menu-body .mod_form form .widget-text {
+    width: 80%;
   }
 }

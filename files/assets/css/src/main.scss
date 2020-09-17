@@ -53,10 +53,6 @@
 
 
 #main {
-  .inside {
-    margin-left: 35px;
-  }
-
   .mod_article .ce_text {
     em {
       color: $blue;
@@ -85,10 +81,8 @@
     margin: 40px 0;
   }
 
-  .content-slider {
-    .ce_image figure img {
-      width: 100%;
-    }
+  .ce_image figure img {
+    width: 100%;
   }
 
   .slider-control {
@@ -308,6 +302,10 @@
   }
 
   #left .mod_customnav {
+    display: none;
+  }
+
+  .quicknavi-right {
     display: none;
   }
 }

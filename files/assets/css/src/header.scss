@@ -4,6 +4,8 @@
   .inside {
     margin-top: 10px;
     > .ce_text {
+      position: relative;
+      z-index: -1;
       clear: both;
       border-bottom: 1px dotted $primary-color;
     }
@@ -108,7 +110,7 @@
   .mod_mobile_menu {
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 45px;
     width: 50px;
     cursor: pointer;
   }
@@ -116,6 +118,35 @@
   .header-wrapper {
     height: 40px;
     border-bottom: 1px dotted $primary-color;
+  }
+
+  .green {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.3em;
+  }
+}
+
+.header-logo-wrapper {
+  height: 200px;
+  position: relative;
+  float: right;
+  width: 340px;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+  }
+}
+
+.header-claim-wrapper {
+  position: absolute;
+  bottom: 15px;
+  p {
+    margin-bottom: 0;
+    line-height: 1em;
   }
 }
 
@@ -159,8 +190,10 @@
   }
 
   .header-logo-wrapper {
+    float: none;
     border-bottom: 1px dotted $primary-color;
     img {
+      position: initial;
       width: 50%;
       min-width: 180px;
     }
